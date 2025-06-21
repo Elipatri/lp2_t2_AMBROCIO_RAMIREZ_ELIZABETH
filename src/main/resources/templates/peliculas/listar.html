@@ -11,6 +11,8 @@
         <h1 class="mb-4">Lista de Películas</h1>
         <a class="btn btn-primary mb-3" th:href="@{/peliculas/nuevo}">Crear nueva película</a>
 
+        
+<a th:href="@{/}" class="btn btn-success mb-3">Home</a>
         <!-- Mostrar tabla solo si la lista no está vacía -->
         <div th:if="${#lists.isEmpty(peliculas)}">
             <p class="alert alert-warning">No hay películas registradas.</p>
